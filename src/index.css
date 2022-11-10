@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* THeme styling */
+
+#light{
+  background-color: #e5e7eb;
+}
+
+#dark{
+  background-color: #0f172a;
+}
+
+/* mobile nav */
+#dark .open{
+  background-color: #0f172a;
+}
+
+/* Header theme */
+#dark .name{
+  color: #d1d5db;
+}
+#dark a{
+  color: #1d4ed8;
+}
+
+/* Hero theme */
+#dark h1, h2{
+  color: #d1d5db;
+}
+#dark .body, #dark p, #dark .footer{
+  color: #94a3b8;
+}
+#dark .btns button{
+  box-shadow: none;
+}
+#light .body{
+  color: black;
+}
+
+/* about theme */
+#dark .about{
+  background-color: #1e293b;
+}
+
+#light .about, #dark input, #dark textarea{
+  background-color: #d1d5db;
+  color:  #d1d5db;
+}
+#light .about h2, #light .about p{
+  color: black;
+}
+
+/* Projects */
+#dark .card p{
+  color: white;
+}
+/* contact theme */
+
+#dark form, #dark .social-grid div{
+  background-color: #1e293b;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+#dark input, #dark textarea{
+  background-color: #334155;
+  border: none;
+}
+#dark form button{
+  background-color: #60a5fa;
+}
+#dark .footer{
+  background-color: #1e293b;
+}
+#light .footer{
+  background-color: #60a5fa;
+}
