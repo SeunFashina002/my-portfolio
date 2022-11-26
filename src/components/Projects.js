@@ -1,16 +1,17 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
   
-  let [projects, setProject] = useState([])
+  let [projects, setProjects] = useState([])
   useEffect(() => {
-    getProject()
-  })
+    getProjects()
+  },[])
 
-  let getProject = async () => {
+  let getProjects = async () => {
     let response = await fetch("http://127.0.0.1:8000/api/projects/");
     let data = await response.json();
-    setProject(data);
+    setProjects(data);
   };
 
   return (
@@ -19,7 +20,7 @@ export default function Projects() {
 
       <div className="grid-container">
         {projects.map((project, index) => (
-          <a href="me.com" key={index}>
+          <Link to={`projects/${project.id}`} key={index}>
             <div className="card">
               <img
                 src={project.image}
@@ -31,7 +32,7 @@ export default function Projects() {
                 {project.description}
               </p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
