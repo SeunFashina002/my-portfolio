@@ -6,7 +6,7 @@
 }
 
 .container {
-  padding: 30px 115px;
+  padding: 30px 100px;
 }
 .bar{
   display: none;
@@ -137,14 +137,6 @@ li a {
   background-color: rgba(2, 1, 21, 0.6);
 }
 
-/*
-font-family: 'Bungee Spice', cursive;
-font-family: 'Inter', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-
 .card h2 {
   position: absolute;
   top: 5px;
@@ -171,6 +163,41 @@ font-family: 'Roboto', sans-serif;
   border-radius: 10px;
   height: inherit;
 }
+
+/*
+font-family: 'Bungee Spice', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+
+/* Details style */
+.details{
+  text-align: center;
+}
+.details h1{
+  font-size: 4.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+.details p {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.det-btn a{
+  width:100%;
+}
+.det-btn a button{
+  width: 30%;
+  cursor: pointer;
+}
+.slideshow-img{
+  width: 100%;
+}
+
+
 
 /* skills style */
 .skills h1 {
@@ -433,6 +460,18 @@ ul{
 .card p {
   font-size: 1rem;
 }
+
+/* Detail */
+.det-btn{
+  justify-content: center;
+  align-items: center;
+}
+.det-btn a button{
+  width: 95%;
+}
+
+
+
 
 /* skills */
 .skills h1 {
