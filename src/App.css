@@ -6,7 +6,7 @@
 }
 
 .container {
-  padding: 30px 100px;
+  padding: 30px 90px;
 }
 .bar{
   display: none;
@@ -196,7 +196,9 @@ font-family: 'Roboto', sans-serif;
 .slideshow-img{
   width: 100%;
 }
-
+.project-stack-div{
+  background-color: #d1d5db;
+}
 
 
 /* skills style */

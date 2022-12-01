@@ -50,17 +50,20 @@ code {
 }
 
 /* about theme */
-#dark .about{
+#dark .about, #dark .project-stack-div{
   background-color: #1e293b;
 }
 
-#light .about, #dark input, #dark textarea{
+#light .about, #light .project-stack-div,  #dark input, #dark textarea{
   background-color: #d1d5db;
   color:  #d1d5db;
 }
 #light .about h2, #light .about p{
   color: black;
 }
+ #light .project-stack-div h1, #light .project-stack-div h2, #light .project-stack-div p{
+  color: black;
+ }
 
 /* Projects */
 #dark .card p{
@@ -87,3 +90,9 @@ code {
 #light .footer{
   background-color: #60a5fa;
 }
+
+
+
+
+
+
