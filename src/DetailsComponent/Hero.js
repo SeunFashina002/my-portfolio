@@ -7,7 +7,7 @@ export default function DetailsHero({id}) {
 
     useEffect(() => {
         getProject()
-    }, [])
+    },[])
     
   
   let getProject = async () => {
