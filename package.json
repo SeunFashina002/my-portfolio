@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy" : "http://127.0.0.1:8000",
+  "proxy": "http://127.0.0.1:8000",
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,9 +14,9 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-switch": "^7.0.0",
+    "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
