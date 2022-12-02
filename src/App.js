@@ -23,7 +23,7 @@ function App() {
           <Header toggleTheme={toggleTheme} theme={theme} />
           <Routes>
             <Route index element={<Home />} />
-            <Route path="/projects/:id" element={<Details />} />
+            <Route path="/projects/:id/" element={<Details />} />
           </Routes>
           <Footer />
         </div>
@@ -33,10 +33,3 @@ function App() {
 }
 
 export default App;
-
-// <Route path="/" element={<Hero />} exact />
-// <Route path="/" element={<About />} exact />
-// <Route path="/" element={<Projects />} exact />
-// <Route path="/" element={<Skills />} exact />
-// <Route path="/" element={<Contact />} exact />
-// <Route path="pro/" element={<Details />} exact />

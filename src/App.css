@@ -197,9 +197,22 @@ font-family: 'Roboto', sans-serif;
   width: 100%;
 }
 .project-stack-div{
+  height: 100vh;
+  padding: 2rem;
   background-color: #d1d5db;
 }
+.project-stack-div h1{
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
 
+.project-stack-div h2{
+  margin-top: 6.2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  
+}
 
 /* skills style */
 .skills h1 {
