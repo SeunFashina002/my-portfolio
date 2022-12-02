@@ -23,7 +23,7 @@ function App() {
           <Header toggleTheme={toggleTheme} theme={theme} />
           <Routes>
             <Route index element={<Home />} />
-            <Route path="/projects/:id/" element={<Details />} />
+            <Route path="/projects/:id" element={<Details />} />
           </Routes>
           <Footer />
         </div>
