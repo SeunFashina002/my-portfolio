@@ -16,7 +16,7 @@ import "../DetailsComponent/slidestyle.css"
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export default function SlideShow() {
+export default function SlideShow({id}) {
     let [slideshows, setSlideshows] = useState([])
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function SlideShow() {
     }, [])
 
     let getSlideShows = async () => {
-        let response = await fetch('http://127.0.0.1:8000/api/projects/detail/slideshows')
+        let response = await fetch(`http://127.0.0.1:8000/api/projects/${id}/detail/slideshows`)
         let data = await response.json()
         setSlideshows(data);
     }
@@ -44,14 +44,14 @@ export default function SlideShow() {
           clickable: true,
         }}
         navigation={true}
-        effect={'fade'}
+        effect={"fade"}
         speed={800}
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         className="mySwiper"
       >
         {slideshows.map((slideshow, index) => (
-          <SwiperSlide>
-            <img key={index} src={slideshow.image} alt={slideshow.alt} />
+          <SwiperSlide key={index}>
+            <img src={slideshow.image} alt={slideshow.alt} />
           </SwiperSlide>
         ))}
       </Swiper>
