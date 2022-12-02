@@ -10,8 +10,8 @@ export default function Details() {
   return (
     <>
       <DetailsHero id={id} />
-      <SlideShow />
-      <TechStack />
+      <SlideShow id={id} />
+      <TechStack id={id} />
     </>
   );
 }
