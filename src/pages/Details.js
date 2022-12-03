@@ -1,6 +1,7 @@
 import DetailsHero from "../DetailsComponent/Hero";
 import SlideShow from "../DetailsComponent/SlideShow";
 import TechStack from "../DetailsComponent/TechStack";
+import ProjectFunctionality from "../DetailsComponent/Functionality";
 import { useParams } from "react-router-dom";
 
 export default function Details() {
@@ -12,6 +13,7 @@ export default function Details() {
       <DetailsHero id={id} />
       <SlideShow id={id} />
       <TechStack id={id} />
+      <ProjectFunctionality id={id} />
     </>
   );
 }
