@@ -272,6 +272,7 @@ font-family: 'Roboto', sans-serif;
 }
 .logo_stack {
   width: 70%;
+  border-radius: 5px;
   height: 70%;
 }
 .stack_name {
