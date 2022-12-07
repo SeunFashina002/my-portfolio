@@ -11,37 +11,40 @@ export default function Header(props) {
     <nav>
       <div className="container main">
         <div className={menu ? "menu-list" : "open"}>
-          
-            <h2 className="close-div" onClick={toggleMenu}>
-              &#10006;
-            </h2>
-          
+          <h2 className="close-div" onClick={toggleMenu}>
+            &#10006;
+          </h2>
+
           <ul className="nav-mob-links">
             <li>
-              <a href="me.com"> Projects</a>
+              <a href="/#projects"> Projects</a>
             </li>
             <li>
-              <a href="me.com"> Skills</a>
+              <a href="/#skills"> Skills</a>
             </li>
             <li>
-              <a href="me.com"> Contact me</a>
+              <a href="/#contact"> Contact me</a>
             </li>
           </ul>
         </div>
         <div className="nav-items">
           <span className="logo_name">
-            <img src="/images/logo.jpg" alt="Logo" />
-            <h3 className="name">Seun Fashina</h3>
+            <a className = 'logo_link' href="/">
+              <img src="/images/logo.jpg" alt="Logo" />
+            </a>
+            <a href="/" className="logo_link_text">
+              <h3 className="name">Seun Fashina</h3>
+            </a>
           </span>
           <ul className="nav-links">
             <li>
-              <a href="me.com"> Projects</a>
+              <a href="/#projects"> Projects</a>
             </li>
             <li>
-              <a href="me.com"> Skills</a>
+              <a href="/#skills"> Skills</a>
             </li>
             <li>
-              <a href="me.com"> Contact me</a>
+              <a href="/#contact"> Contact me</a>
             </li>
           </ul>
           <Switch

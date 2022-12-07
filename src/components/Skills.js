@@ -15,7 +15,7 @@ export default function Skills() {
 
 
     return (
-      <section className="container">
+      <section className="container" id="skills">
         <div className="skills">
           <h1>Skills</h1>
           <div className="skill-grid">

@@ -13,7 +13,7 @@ const OtherProejcts = ({id}) => {
         setProjects(data);
     };
     const other_proejcts = projects.map((project, index) => {
-        if (id !== project.id) {
+        if (id != project.id) {
             return (
               <div className="others">
                 <a href={`/projects/${project.id}`} key={index}>

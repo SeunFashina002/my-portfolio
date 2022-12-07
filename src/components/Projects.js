@@ -15,7 +15,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="container projects">
+    <section className="container projects" id='projects'>
       <h1>Projects</h1>
 
       <div className="grid-container">

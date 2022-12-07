@@ -57,3 +57,12 @@ body {
     object-fit: fill;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+  .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+  }
+
+}
