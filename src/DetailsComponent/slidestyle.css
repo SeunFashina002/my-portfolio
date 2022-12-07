@@ -49,3 +49,11 @@ body {
   height: 100vh;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .swiper-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+  }
+}
