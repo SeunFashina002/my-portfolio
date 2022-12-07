@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&family=Open+Sans:wght@500&family=Poppins:wght@400;500&family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter&family=Open+Sans:wght@500&family=Poppins:wght@400;500&family=Roboto:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 .container {
   padding: 30px 90px;
 }
-.bar{
+.bar {
   display: none;
 }
 .nav-items {
@@ -16,13 +16,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.close-div, .nav-mob-links {
+.close-div,
+.nav-mob-links {
   display: none;
 }
 
 .logo_name {
   display: flex;
-  font-family: 'Inter', sans-serif;  
+  font-family: "Inter", sans-serif;
   align-items: center;
 }
 .logo_name img {
@@ -40,7 +41,7 @@ ul li {
   margin-right: 4rem;
 }
 li a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
@@ -54,7 +55,7 @@ li a {
 }
 .intro h1 {
   font-size: 80px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 95%;
   margin: auto;
 }
@@ -68,7 +69,7 @@ li a {
   margin: auto;
   margin-top: 50px;
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .btns button {
@@ -82,7 +83,7 @@ li a {
   color: white;
   outline: none;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-shadow: 2px 2px 20px 2px #60a5fa;
 }
 
@@ -90,15 +91,13 @@ li a {
 .about h2 {
   text-align: center;
   font-size: 1.8rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 0.5rem;
 }
 .about p {
   font-size: 1.15rem;
   padding-top: 1rem;
-  font-family: 'Poppins', sans-serif;
-
-
+  font-family: "Poppins", sans-serif;
 }
 .about {
   padding: 1rem;
@@ -118,12 +117,11 @@ li a {
 }
 .projects h1 {
   font-size: 2.1rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-.card {
+.card, .others{
   position: relative;
   border-radius: 10px;
-  height: 100%;
   height: 500px;
   padding-bottom: 100px;
 }
@@ -145,10 +143,10 @@ li a {
   font-size: 2rem;
   font-weight: 500;
   padding-left: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .card p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   top: 50px;
   font-weight: 300;
@@ -158,10 +156,30 @@ li a {
   padding-right: 0.7rem;
   font-size: 1rem;
 }
-.card-image {
+.card-image{
   width: 100%;
   border-radius: 10px;
   height: inherit;
+}
+.others{
+  height: 350px;
+}
+.others h2{
+  color: black;
+  margin: 1rem 0 .8rem 0;
+  font-family: "Inter", sans-serif;
+}
+.others p {
+  font-family: "Poppins", sans-serif;
+}
+.others h2 a, .others p a{
+  text-decoration: none;
+  color: black;
+}
+.others-image{
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
 }
 
 /*
@@ -172,85 +190,82 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-
 /* Details style */
-.details{
+.details {
   text-align: center;
+  width: 100%;
 }
-.details h1{
+.details h1 {
   font-size: 4.8rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 800;
 }
 .details p {
   font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
   margin-top: 3rem;
 }
-.det-btn a{
-  width:100%;
+.det-btn a {
+  width: 100%;
 }
-.det-btn a button{
+.det-btn a button {
   width: 30%;
   cursor: pointer;
 }
-.slideshow-img{
-  width: 100%;
-}
-.project-stack-div{
+
+.project-stack-div {
   height: 100vh;
   padding: 2rem;
   background-color: #d1d5db;
 }
-.project-stack-div h1{
+.project-stack-div h1 {
   margin-bottom: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
 }
 
-.project-stack-div h2{
+.project-stack-div h2 {
   margin-top: 6.2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
-  
 }
 
 /*Project functionality style */
 
-.functionality-div{
+.functionality-div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.functionality-img-div{
+.functionality-img-div {
   width: 600px;
   height: 350px;
-  
 }
-.functionality-text-div{
+.functionality-text-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 42%;
 }
-.functionality-text-div h1{
+.functionality-text-div h1 {
   margin: 1.3rem 0;
   font-size: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-.functionality-text-div p{
-  font-family: 'Poppins', sans-serif;
+.functionality-text-div p {
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
-.functionality-img-div img{
+.functionality-img-div img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
-.functonality-div-inner{
+.functonality-div-inner {
   margin: 6.2rem 0;
   width: 100%;
   display: flex;
-  
+
   justify-content: space-between;
 }
 
@@ -258,7 +273,7 @@ font-family: 'Roboto', sans-serif;
 .skills h1 {
   margin-top: 40px;
   font-size: 2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .skill-grid {
   display: grid;
@@ -276,8 +291,8 @@ font-family: 'Roboto', sans-serif;
   height: 70%;
 }
 .stack_name {
-  font-size: .9rem;
-  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
 }
 
 /* contact me styling */
@@ -304,7 +319,7 @@ font-family: 'Roboto', sans-serif;
   width: 80%;
   /* padding: 2rem; */
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   height: 135px;
 }
 .social-grid img {
@@ -323,12 +338,12 @@ font-family: 'Roboto', sans-serif;
   outline: none;
   padding: 1rem;
   font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-radius: 15px;
   background-color: lavender;
 }
 .contact-me {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 2rem;
@@ -336,15 +351,15 @@ font-family: 'Roboto', sans-serif;
 .contact-form p {
   margin: 1rem 0rem 1.5rem 0rem;
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
 .contact-form textarea {
   width: 100%;
-  padding: .75rem;
+  padding: 0.75rem;
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   outline: none;
   border-radius: 15px;
   background-color: lavender;
@@ -355,7 +370,7 @@ font-family: 'Roboto', sans-serif;
   background-color: #3b82f6;
   padding: 1.2rem;
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   border-radius: 15px;
   margin-top: 2.5rem;
@@ -364,7 +379,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* footer */
-.footer{
+.footer {
   background-color: lightblue;
   text-align: center;
   font-size: 1.3rem;
@@ -374,217 +389,234 @@ font-family: 'Roboto', sans-serif;
   margin: 1.5rem 0rem 0rem 0rem;
 }
 
-
 /* MOBILE STARTS HERE */
 
 @media screen and (max-width: 768px) {
-.container {
-  padding: 1rem;
-}
+  .container {
+    padding: 1rem;
+  }
 
-.main{
-  position: relative;
-}
-.open{
-  display: block;
-  position: absolute;
-  height: 100vh;
-  background-color: #fda4af;
-  transition: all ease-in-out 600ms;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 200;
-}
+  .main {
+    position: relative;
+  }
+  .open {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    background-color: #fda4af;
+    transition: all ease-in-out 600ms;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+  }
 
-.menu-list{
-  display: none;
-  transition: all ease-in 500ms;
-  width: 0%;
-}
-ul{
-  display: none;
-}
-.bar{
-  display: block;
-  margin-left: 30%;
-  width: 6.5%;
-  color: #0284c7;
+  .menu-list {
+    display: none;
+    transition: all ease-in 500ms;
+    width: 0%;
+  }
+  ul {
+    display: none;
+  }
+  .bar {
+    display: block;
+    margin-left: 30%;
+    width: 6.5%;
+    color: #0284c7;
+  }
+  .close-div {
+    display: block;
+    text-align: right;
+    padding: 1rem;
+    color: #0284c7;
+  }
+  .close {
+    margin: auto;
+    width: 5%;
+    margin-bottom: 20px;
+  }
 
-}
-.close-div{
-  display: block;
-  text-align: right;
-  padding: 1rem;
-  color: #0284c7;
-}
-.close{
-  margin: auto;
-  width: 5%;
-  margin-bottom: 20px;
-}
+  .logo_name {
+    font-size: 1rem;
+  }
+  .logo_name img {
+    width: 20%;
+    margin-right: 5px;
+  }
 
-.logo_name {
-  font-size: 1rem;
-}
-.logo_name img {
-  width: 20%;
-  margin-right: 5px;
-}
+  /* nav links */
+  .nav-mob-links {
+    display: block;
+    text-align: center;
+  }
+  .nav-mob-links li {
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .nav-mob-links li a {
+    color: white;
+    font: 1em sans-serif;
+    font-size: 1.2rem;
+  }
 
+  /* hero */
+  .intro {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  .intro span {
+    font-size: 2.5rem;
+  }
+  .intro .body {
+    width: 100%;
+    margin: auto;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .btns {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
 
-/* nav links */
-.nav-mob-links {
-  display: block;
-  text-align: center;
-}
-.nav-mob-links li{
-  margin: auto;
-  margin-top: 20%;
-  margin-bottom: 20%;
-  
-}
-.nav-mob-links li a{
-  color: white;
-  font: 1em sans-serif;
-  font-size: 1.2rem;
-}
+  .btns button {
+    width: 50%;
+    box-shadow: 2px 2px 15px 2px lightblue;
+  }
 
+  /* about */
+  .about p {
+    font-size: 1rem;
+  }
+  .about {
+    width: 100%;
+  }
 
-/* hero */
-.intro {
-  margin-bottom: 2rem;
-  width: 100%;
-}
-.intro h1 {
-  font-size: 2.4rem;
-  line-height: 3rem;
-  width: 100%;
-  padding: 1rem;
-}
-.intro span {
-  font-size: 2.5rem;
-}
-.intro .body {
-  width: 100%;
-  margin: auto;
-  margin-top: .5rem;
-  font-size: 1.1rem;
-}
-.btns{
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  
-}
+  /* projects */
+  .grid-container {
+    display: block;
+    margin-top: 25px;
+  }
+  .projects h1 {
+    font-size: 2rem;
+  }
+  .card {
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .card-image {
+    width: 100%;
+    border-radius: 10px;
+    height: inherit;
+  }
 
-.btns button {
-  width: 50%;
-  box-shadow: 2px 2px 15px 2px lightblue;
-}
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
 
-/* about */
-.about p {
-  font-size: 1rem;
-}
-.about {
-  width: 100%;
-}
+  /* project functionality styling */
 
-/* projects */
-.grid-container {
-  display: block;
-  margin-top: 25px;
-}
-.projects h1 {
-  font-size: 2rem;
-}
-.card {
-  height: 500px;
-  margin-bottom: 20px;
-}
-.card-image {
-  width: 100%;
-  border-radius: 10px;
-  height: inherit;
-}
+  .functionality-div {
+    display: block;
+  }
+  .functonality-div-inner {
+    width: 100%;
+    display: block;
+  }
+  .functionality-text-div {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .functionality-img-div {
+    width: 100%;
+    height: 250px;
+  }
+  .functionality-img-div img {
+    width: 100%;
+  }
 
+  /* Detail */
+  .details h1 {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+  }
+  .details p{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+  }
+  .det-btn {
+    justify-content: center;
+    align-items: center;
+  }
+  .det-btn a button {
+    width: 95%;
+  }
 
-.card h2 {
-  font-size: 1.5rem;
-}
-.card p {
-  font-size: 1rem;
-}
+  /* skills */
+  .skills h1 {
+    margin-top: 40px;
+    font-size: 2rem;
+  }
 
-/* Detail */
-.det-btn{
-  justify-content: center;
-  align-items: center;
-}
-.det-btn a button{
-  width: 95%;
-}
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .logo_stack {
+    width: 68%;
+    height: 60%;
+  }
+  .stack_name {
+    font-size: 1rem;
+  }
+  /* contact me styling */
+  .contact-div {
+    display: block;
+  }
 
-
-
-
-/* skills */
-.skills h1 {
-  margin-top: 40px;
-  font-size: 2rem;
-}
-
-.skill-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: .5rem;
-}
-.logo_stack {
-  width: 68%;
-  height: 60%;
-}
-.stack_name {
-  font-size: 1rem;
-}
-/* contact me styling */
-.contact-div {
-  display: block;
-}
-
-.form-div {
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
-.contact-form{
-  background-color: #e5e7eb;
-  box-shadow: 2px 2px 2px 2px #d4d4d8;
-}
-.social-div {
-  width: 100%;
-  margin: 0px;
-}
-.social-grid {
-  padding: 0px;
-  gap: 1.5rem 0rem;
-
-}
-.social-grid div {
-  width: 75%;
-  height: 100%;
-  border-radius: 0px;
-  background-color: #e5e7eb;
-  box-shadow: none;
-
-
-}
-.social-grid img {
-  width: 50%;
-}
-.contact-me {
-  font-size: 2rem;
-}
-.contact-form p {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
+  .form-div {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .contact-form {
+    background-color: #e5e7eb;
+    box-shadow: 2px 2px 2px 2px #d4d4d8;
+  }
+  .social-div {
+    width: 100%;
+    margin: 0px;
+  }
+  .social-grid {
+    padding: 0px;
+    gap: 1.5rem 0rem;
+  }
+  .social-grid div {
+    width: 75%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #e5e7eb;
+    box-shadow: none;
+  }
+  .social-grid img {
+    width: 50%;
+  }
+  .contact-me {
+    font-size: 2rem;
+  }
+  .contact-form p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
 }

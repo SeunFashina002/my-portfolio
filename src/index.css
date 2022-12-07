@@ -69,6 +69,9 @@ code {
 #dark .card p{
   color: white;
 }
+#dark .others h2 a, #dark .others p a{
+  color:  #d1d5db;
+}
 /* contact theme */
 
 #dark form, #dark .social-grid div{
