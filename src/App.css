@@ -249,14 +249,14 @@ font-family: 'Roboto', sans-serif;
   flex-direction: column;
 }
 .functionality-img-div {
-  width: 100%;
+  width: 45%;
   height: 350px;
 }
 .functionality-text-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 42%;
   padding: 1rem;
 }
 .functionality-text-div h1 {
@@ -298,8 +298,8 @@ font-family: 'Roboto', sans-serif;
 }
 .logo_stack {
   width: 70%;
+  height: 60%;
   border-radius: 5px;
-  height: 70%;
 }
 .stack_name {
   font-size: 0.9rem;
@@ -330,8 +330,12 @@ font-family: 'Roboto', sans-serif;
   width: 80%;
   /* padding: 2rem; */
   text-align: center;
-  font-family: "Inter", sans-serif;
   height: 135px;
+}
+.social-grid div a{
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: black;
 }
 .social-grid img {
   width: 65%;
