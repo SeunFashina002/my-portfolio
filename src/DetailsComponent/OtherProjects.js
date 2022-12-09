@@ -11,12 +11,13 @@ const OtherProejcts = ({id}) => {
         let response = await fetch("http://127.0.0.1:8000/api/projects/");
         let data = await response.json();
         setProjects(data);
-    };
-    const other_proejcts = projects.map((project, index) => {
+  };
+  
+    const other_projects = projects.map((project, index) => {
         if (id != project.id) {
             return (
-              <div className="others">
-                <a href={`/projects/${project.id}`} key={index}>
+              <div className="others" key={index}>
+                <a href={`/projects/${project.id}`}>
                   <img
                     src={project.image}
                     className="others-image"
@@ -39,7 +40,7 @@ const OtherProejcts = ({id}) => {
         <h1>Other Projects</h1>
 
         <div className="grid-container">
-            {other_proejcts}
+            {other_projects}
         </div>
     </section>
     );
