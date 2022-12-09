@@ -87,6 +87,10 @@ code {
 #dark form button{
   background-color: #60a5fa;
 }
+
+#dark .social-grid img {
+  filter: invert(100%);
+}
 #dark .footer{
   background-color: #1e293b;
 }
