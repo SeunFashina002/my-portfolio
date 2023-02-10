@@ -1,7 +1,7 @@
-import React, { useEffect,  useState } from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from 'swiper'
+import { EffectFade } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,27 +9,25 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
-
-import "../DetailsComponent/slidestyle.css"
-
+import "../DetailsComponent/slidestyle.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export default function SlideShow({id}) {
-    let [slideshows, setSlideshows] = useState([])
+export default function SlideShow({ id }) {
+  let [slideshows, setSlideshows] = useState([]);
 
-    useEffect(() => {
-        getSlideShows()
-    }, [])
+  useEffect(() => {
+    getSlideShows();
+  }, []);
 
-    let getSlideShows = async () => {
-        let response = await fetch(`http://127.0.0.1:8000/api/projects/${id}/detail/slideshows`)
-        let data = await response.json()
-        setSlideshows(data);
-    }
-
-
+  let getSlideShows = async () => {
+    let response = await fetch(
+      `http://127.0.0.1:8000/api/projects/${id}/detail/slideshows`
+    );
+    let data = await response.json();
+    setSlideshows(data);
+  };
 
   return (
     <div className="container">
@@ -58,4 +56,3 @@ export default function SlideShow({id}) {
     </div>
   );
 }
-

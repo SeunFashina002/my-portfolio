@@ -61,6 +61,9 @@ code {
 #light .about h2, #light .about p{
   color: black;
 }
+#dark .about h2{
+  color: #d1d5db;
+}
  #light .project-stack-div h1, #light .project-stack-div h2, #light .project-stack-div p{
   color: black;
  }

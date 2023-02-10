@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import successAlert from "./SuccessModal";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -35,7 +36,9 @@ export default function Contact() {
     setName("");
     setEmail("");
     setMessage("");
-    alert('Message sent successfully')
+    successAlert();
+    
+    
   };
 
   return (
@@ -77,19 +80,31 @@ export default function Contact() {
         <div className="social-div">
           <div className="social-grid">
             <div>
-              <a href="https://wa.me/08075422354" target="_blank">
+              <a
+                href="https://wa.me/08075422354"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="./social/whatsapp__logo.svg" alt="whatsapp-logo" />
                 <p>Whatsapp</p>
               </a>
             </div>
             <div>
-              <a href="https://twitter.com/heisblaq_" target="_blank">
+              <a
+                href="https://twitter.com/heisblaq_"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="./social/twitter.svg" alt="twitter-logo" />
                 <p>Twitter</p>
               </a>
             </div>
             <div>
-              <a href="https://github.com/seunfashina002" target="_blank">
+              <a
+                href="https://github.com/seunfashina002"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="./social/github__logo.svg" alt="github logo" />
                 <p>Github</p>
               </a>
@@ -98,6 +113,7 @@ export default function Contact() {
               <a
                 href="https://www.linkedin.com/in/seun-fashina-7b6b01232/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="./social/linkeding__logo.svg" alt="linkedin logo" />
                 <p>Linkedin</p>

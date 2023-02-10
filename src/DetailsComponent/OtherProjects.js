@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 
+
 const OtherProejcts = ({id}) => {
     let [projects, setProjects] = useState([]);
         useEffect(() => {

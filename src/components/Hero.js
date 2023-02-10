@@ -1,6 +1,7 @@
 import myresume from '../myresume.pdf'
-
+import { HashLink } from "react-router-hash-link";
 export default function Hero() {
+
   return (
     <section className="container intro">
       <h1>
@@ -15,9 +16,9 @@ export default function Hero() {
       </p>
 
       <div className="btns det-btn">
-        <a href="/#contact">
+        <HashLink to="#contact">
           <button>Contact Me</button>
-        </a>
+        </HashLink>
 
         <a href={myresume} download="myresume.pdf">
           <button>Get Resume</button>

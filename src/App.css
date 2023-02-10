@@ -34,7 +34,8 @@
 .logo_name img {
   width: 50px;
   margin-right: 10px;
-  border-radius: 100px;
+  height: 50px;
+  border-radius: 50px;
 }
 
 ul {
@@ -98,6 +99,7 @@ li a {
   font-size: 1.8rem;
   font-family: "Inter", sans-serif;
   padding: 0.5rem;
+  color: black;
 }
 .about p {
   font-size: 1.15rem;
@@ -279,6 +281,11 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-between;
 }
+
+.functonality-div-inner:nth-child(even){
+  flex-direction: row-reverse;
+}
+
 
 /* skills style */
 .skills h1 {
@@ -465,6 +472,8 @@ font-family: 'Roboto', sans-serif;
 
   .logo_name img {
     width: 100%;
+    height: 100%;
+    border-radius: 100%;
   }
 
   /* nav links */
