@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Switch from "react-switch";

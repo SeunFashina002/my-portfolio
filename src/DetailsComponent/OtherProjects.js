@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
+import { BASE_URL } from "../constants/Base_url";
 
 
 const OtherProejcts = ({id}) => {
@@ -9,7 +10,7 @@ const OtherProejcts = ({id}) => {
     }, []);
 
         let getProjects = async () => {
-        let response = await fetch("http://127.0.0.1:8000/api/projects/");
+        let response = await fetch(`${BASE_URL}`);
         let data = await response.json();
         setProjects(data);
   };
@@ -18,13 +19,13 @@ const OtherProejcts = ({id}) => {
         if (id != project.id) {
             return (
               <div className="others" key={index}>
-                <a href={`/projects/${project.id}`}>
+                <Link href={`/projects/${project.id}`}>
                   <img
                     src={project.image}
                     className="others-image"
                     alt="card-img"
                   />
-                </a>
+                </Link>
 
                 <h2>
                   <a href={`/projects/${project.id}`}>{project.title}</a>

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 export default function Projects() {
   
   let [projects, setProjects] = useState([])
@@ -18,7 +20,7 @@ export default function Projects() {
 
       <div className="grid-container">
         {projects.map((project, index) => (
-          <a href={`projects/${project.id}`} key={index}>
+          <Link to={`projects/${project.id}`} key={index}>
             <div className="card">
               <img src={project.image} className="card-image" alt="card-img" />
               <h2>{project.title}</h2>
@@ -30,7 +32,7 @@ export default function Projects() {
                 <p>{project.description.slice(0, 120) + "..."}</p>
               )}
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

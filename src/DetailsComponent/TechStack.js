@@ -1,25 +1,26 @@
 import {useEffect, useState} from 'react'
-
+import { BASE_URL } from '../constants/Base_url';
 const TechStack = ({ id }) => {
-  let [stacks, setStacks] = useState([])
+  let [stacks, setStacks] = useState([])    
+  let [front_tech_stack, setFrontTechStack] = useState('Frontend')
 
   useEffect(() => {
     getStack()
   }, [])
 
   const getStack = async () => {
-    let response = await fetch(`http://127.0.0.1:8000/api/projects/${id}/detail/pstack`);
+    let response = await fetch(`${BASE_URL}/${id}/detail/pstack`);
     let data = await response.json()
     setStacks(data)
   }
 
-
+  
   return (
     <div className="container">
       <div className="project-stack-div">
         <h1>Tech Stack</h1>
         <div className="skills">
-          <h1>Frontend</h1>
+          <h1>{front_tech_stack}</h1>
           <div className="skill-grid">
             {stacks.map((stack, index) => {
               if (stack.category == "frontend") {

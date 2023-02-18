@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../constants/Base_url";
 
 const ProjectFunctionality = ({ id }) => {
   let [functionalities, setFunctionalities] = useState([]);
@@ -9,7 +10,7 @@ const ProjectFunctionality = ({ id }) => {
 
   const getFunctionality = async () => {
     let response = await fetch(
-      `http://127.0.0.1:8000/api/projects/${id}/detail/functionality`
+      `${BASE_URL}/${id}/detail/functionality`
     );
     let data = await response.json();
     setFunctionalities(data);

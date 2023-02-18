@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-
+import { BASE_URL } from "../constants/Base_url";
 
 export default function DetailsHero({id}) {
 
-  let [project, setProject] = useState([]);
+  let [project, setProject] = useState('');
 
     useEffect(() => {
         getProject()
@@ -11,7 +11,7 @@ export default function DetailsHero({id}) {
     
   
   let getProject = async () => {
-    let response = await fetch(`http://127.0.0.1:8000/api/projects/${id}`);
+    let response = await fetch(`${BASE_URL}/${id}`);
     let data = await response.json();
     setProject(data);
   };
@@ -25,9 +25,13 @@ export default function DetailsHero({id}) {
         <p>{project.description}</p>
 
         <div className="btns det-btn">
-          <a href="me.com">
-            <button>Not Deployed</button>
-          </a>
+          {project.project_link == "#" ? (
+            ""
+          ) : (
+            <a href={project.project_link}>
+                <button>{project.status}</button>
+            </a>
+          )}
           <a href={project.github_link}>
             <button>View Code</button>
           </a>

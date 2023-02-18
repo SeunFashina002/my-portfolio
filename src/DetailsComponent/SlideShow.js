@@ -14,6 +14,8 @@ import "../DetailsComponent/slidestyle.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+import { BASE_URL } from "../constants/Base_url";
+
 export default function SlideShow({ id }) {
   let [slideshows, setSlideshows] = useState([]);
 
@@ -22,9 +24,7 @@ export default function SlideShow({ id }) {
   }, []);
 
   let getSlideShows = async () => {
-    let response = await fetch(
-      `http://127.0.0.1:8000/api/projects/${id}/detail/slideshows`
-    );
+    let response = await fetch(`${BASE_URL}/${id}/detail/slideshows`);
     let data = await response.json();
     setSlideshows(data);
   };
