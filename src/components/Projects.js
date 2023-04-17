@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { BASE_URL } from '../constants/Base_url'
 
 export default function Projects() {
   
@@ -9,7 +10,7 @@ export default function Projects() {
   },[])
 
   let getProjects = async () => {
-    let response = await fetch("http://127.0.0.1:8000/api/projects/");
+    let response = await fetch(`${BASE_URL}`);
     let data = await response.json();
     setProjects(data);
   };
