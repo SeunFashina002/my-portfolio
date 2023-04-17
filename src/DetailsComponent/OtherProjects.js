@@ -19,23 +19,26 @@ const OtherProejcts = ({id}) => {
         if (id != project.id) {
             return (
               <div className="others" key={index}>
-                <Link href={`/projects/${project.id}`}>
+                <a href={`/projects/${project.id}`}>
                   <img
                     src={project.image}
                     className="others-image"
                     alt="card-img"
                   />
-                </Link>
+                </a>
+
+
+
 
                 <h2>
-                  <a href={`/projects/${project.id}`}>{project.title}</a>
+                  <Link to={`/projects/${project.id}`}>{project.title}</Link>
                 </h2>
                 <p>
-                  <a href={`/projects/${project.id}`}>{project.description}</a>
+                  <Link to={`/projects/${project.id}`}>{project.description}</Link>
                 </p>
               </div>
             );
-        }
+      }
     })
     return (
     <section className="container projects">
