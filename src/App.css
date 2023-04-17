@@ -27,7 +27,7 @@
   font-family: "Inter", sans-serif;
   align-items: center;
 }
-.logo_name a{
+.logo_name a {
   text-decoration: none;
   color: black;
 }
@@ -126,7 +126,8 @@ li a {
   font-size: 2.1rem;
   font-family: "Inter", sans-serif;
 }
-.card, .others{
+.card,
+.others {
   position: relative;
   border-radius: 10px;
   height: 500px;
@@ -165,31 +166,32 @@ li a {
   padding-right: 0.7rem;
   font-size: 1rem;
 }
-.card-image{
+.card-image {
   width: 100%;
   border-radius: 10px;
   height: inherit;
 }
-.others{
+.others {
   margin-bottom: 3rem;
   height: 380px;
 }
-.others img{
- height: 75%;
+.others img {
+  height: 75%;
 }
-.others h2{
+.others h2 {
   color: black;
-  margin: 1rem 0 .8rem 0;
+  margin: 1rem 0 0.8rem 0;
   font-family: "Inter", sans-serif;
 }
 .others p {
   font-family: "Poppins", sans-serif;
 }
-.others h2 a, .others p a{
+.others h2 a,
+.others p a {
   text-decoration: none;
   color: black;
 }
-.others-image{
+.others-image {
   width: 100%;
   border-radius: 10px;
   height: 100%;
@@ -227,7 +229,6 @@ font-family: 'Roboto', sans-serif;
 }
 
 .project-stack-div {
-  height: 100vh;
   padding: 2rem;
   background-color: #d1d5db;
 }
@@ -282,10 +283,9 @@ font-family: 'Roboto', sans-serif;
   justify-content: space-between;
 }
 
-.functonality-div-inner:nth-child(even){
+.functonality-div-inner:nth-child(even) {
   flex-direction: row-reverse;
 }
-
 
 /* skills style */
 .skills h1 {
@@ -295,7 +295,6 @@ font-family: 'Roboto', sans-serif;
 }
 .skill-grid {
   display: grid;
-  padding: 0.3rem 1.5rem;
   grid-template-columns: repeat(6, 1fr);
   gap: 4.5rem 5rem;
   margin-top: 25px;
@@ -339,7 +338,7 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
   height: 135px;
 }
-.social-grid div a{
+.social-grid div a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   color: black;
@@ -411,6 +410,25 @@ font-family: 'Roboto', sans-serif;
   margin: 1.5rem 0rem 0rem 0rem;
 }
 
+/* error page */
+.notfound {
+  height: 100vh;
+}
+.notfound .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.body img {
+  width: 40%;
+}
+.error-message{
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
 /* MOBILE STARTS HERE */
 
 @media screen and (max-width: 767px) {
@@ -418,6 +436,10 @@ font-family: 'Roboto', sans-serif;
     padding: 1rem;
   }
 
+  /* error img */
+  .body img {
+    width: 100%;
+  }
   .main {
     position: relative;
   }
@@ -465,9 +487,9 @@ font-family: 'Roboto', sans-serif;
   .logo_link {
     width: 15%;
   }
-  .logo_link_text{
-    font-size: .8rem;
-    margin-left: .3rem;
+  .logo_link_text {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
   }
 
   .logo_name img {
@@ -583,9 +605,9 @@ font-family: 'Roboto', sans-serif;
     font-size: 1.7rem;
     margin-top: 1.5rem;
   }
-  .details p{
+  .details p {
     font-size: 1.1rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
   .det-btn {
     justify-content: center;
@@ -652,7 +674,7 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding: 2rem;
   }
@@ -666,7 +688,7 @@ font-family: 'Roboto', sans-serif;
   .social-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .form-div{
+  .form-div {
     width: 100%;
   }
   .contact-form {
@@ -678,7 +700,7 @@ font-family: 'Roboto', sans-serif;
   .about {
     width: 100%;
   }
-  
+
   .functionality-div {
     display: block;
   }

@@ -1,9 +1,15 @@
 import React from "react";
-import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Details from "./pages/Details";
-import { createContext } from "react";
+import { NotFound } from "./pages/Error404";
+import { ScrollToTop } from "react-router-scroll-to-top";
 import RootLayout from "./layouts/RootLayout";
 import ThemeContextProvider from "./contexts/ThemeContext";
 
@@ -13,27 +19,21 @@ const router = createBrowserRouter(
       path="/"
       element={
         <ThemeContextProvider>
-          <RootLayout />
+          <ScrollToTop>
+            <RootLayout />
+          </ScrollToTop>
         </ThemeContextProvider>
       }
     >
       <Route index element={<Home />} />
       <Route path="projects/:id" element={<Details />} />
+      <Route path="*" element={<NotFound/>} />
     </Route>
   )
 );
 
-
 function App() {
-  
-  return (
-    <RouterProvider router={router}/>
-  )
+  return <RouterProvider router={router} />;
+}
 
-};
-
-export default App;  
-
-
-
-
+export default App;
