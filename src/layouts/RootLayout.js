@@ -43,10 +43,10 @@ export default function RootLayout() {
           <div className="nav-items">
             <span className="logo_name">
               <Link className="logo_link" to="/">
-                <img src="/images/logo.jpg" alt="Logo" />
+                <img src="/logo.png" alt="Logo" />
               </Link>
               <Link to="/" className="logo_link_text">
-                <h3 className="name">Seun Fashina</h3>
+                <h3 className="name">Seun Fashina 👨‍💻</h3>
               </Link>
             </span>
             <ul className="nav-links">
