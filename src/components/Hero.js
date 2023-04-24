@@ -7,11 +7,11 @@ export default function Hero() {
   return (
     <section className="container intro">
       <h1>
-        My name is Seun, I am a <span>Software Developer</span>
+        My name is Seun, I am a <span>Backend Developer</span>
       </h1>
 
       <p className="body">
-        I am a software developer eager to contribute to team success through
+        I am a backend developer eager to contribute to team success through
         hard work, attention to detail, and excellent organizational skills.
       </p>
 
