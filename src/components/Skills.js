@@ -1,15 +1,26 @@
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../constants/Base_url";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+
 export default function Skills() {
-  let [stacks, setStacks] = useState([]);
+  const [stacks, setStacks] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getStack();
   }, []);
 
-  let getStack = async () => {
-    let response = await fetch("http://127.0.0.1:8000/api/stacks/");
-    let data = await response.json();
-    setStacks(data);
+  const getStack = async () => {
+    try {
+      let response = await fetch(`${BASE_URL}/stacks`);
+      let data = await response.json();
+      setStacks(data);
+      setLoading(false);      
+    } catch (error) {
+      console.log(error)
+      setLoading(false);      
+    }
   };
 
   return (
@@ -17,16 +28,24 @@ export default function Skills() {
       <div className="skills">
         <h1>Skills</h1>
         <div className="skill-grid">
-          {stacks.map((stack, index) => (
-            <div key={index} className="logo_group">
-              <img
-                className="logo_stack"
-                src={stack.stack_image}
-                alt={stack.alt}
-              />
-              <p className="stack_name">{stack.stack_name}</p>
-            </div>
-          ))}
+          {loading
+            ? Array.from({ length: 6 }, (_, index) => (
+                <div key={index} className="logo_group">
+                  <Skeleton height={130}/>
+                  <br />
+                  <Skeleton height={20}/>
+                </div>
+              ))
+            : stacks.map((stack, index) => (
+                <div key={index} className="logo_group">
+                  <img
+                    className="logo_stack"
+                    src={stack.stack_image}
+                    alt={stack.alt}
+                  />
+                  <p className="stack_name">{stack.stack_name}</p>
+                </div>
+              ))}
         </div>
       </div>
     </section>
