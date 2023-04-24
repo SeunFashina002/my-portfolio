@@ -228,6 +228,14 @@ font-family: 'Roboto', sans-serif;
   cursor: pointer;
 }
 
+/* loader container */
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-stack-div {
   padding: 2rem;
   background-color: #d1d5db;
@@ -425,13 +433,23 @@ font-family: 'Roboto', sans-serif;
 .body img {
   width: 40%;
 }
-.error-message{
+.error-message {
   font-size: 1.5rem;
   margin: 2rem 0;
+}
+
+/* skelton loader styles */
+
+.heading-text {
+  width: 100%;
+}
+.body-text {
+  width: 50%;
 }
 /* MOBILE STARTS HERE */
 
 @media screen and (max-width: 767px) {
+
   .container {
     padding: 1rem;
   }
@@ -591,6 +609,8 @@ font-family: 'Roboto', sans-serif;
     display: block;
     width: 100%;
     margin-bottom: 2rem;
+
+    padding: 0;
   }
   .functionality-img-div {
     width: 100%;

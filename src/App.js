@@ -12,22 +12,24 @@ import { NotFound } from "./pages/Error404";
 import { ScrollToTop } from "react-router-scroll-to-top";
 import RootLayout from "./layouts/RootLayout";
 import ThemeContextProvider from "./contexts/ThemeContext";
+import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path="/"
       element={
-        <ThemeContextProvider>
-          <ScrollToTop>
+        <ScrollToTop>
+          <ThemeContextProvider>
             <RootLayout />
-          </ScrollToTop>
-        </ThemeContextProvider>
+          </ThemeContextProvider>
+        </ScrollToTop>
       }
+      errorElement={<ErrorPage/>}
     >
       <Route index element={<Home />} />
       <Route path="projects/:id" element={<Details />} />
-      <Route path="*" element={<NotFound/>} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
