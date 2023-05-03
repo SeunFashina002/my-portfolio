@@ -55,9 +55,11 @@ const OtherProjects = ({ id }) => {
           <h2>
             <Link to={`/projects/${project.id}`}>{project.title}</Link>
           </h2>
-          <p>
-            <Link to={`/projects/${project.id}`}>{project.description}</Link>
-          </p>
+          <Link to={`/projects/${project.id}`} style={{textDecoration: 'none'}}>
+            {project.description.length > 120 && (
+              <p>{project.description.slice(0, 120) + "..."}</p>
+            )}
+          </Link>
         </div>
       );
     }

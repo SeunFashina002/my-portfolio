@@ -43,7 +43,7 @@ export default function DetailsHero({ id }) {
           <p>{project.description}</p>
 
           <div className="btns det-btn">
-            {project.project_link !== "#" && (
+            {project.project_link && (
               <a href={project.project_link}>
                 <button>{project.status}</button>
               </a>
