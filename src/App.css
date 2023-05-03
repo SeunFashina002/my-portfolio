@@ -647,16 +647,22 @@ font-family: 'Roboto', sans-serif;
     gap: 0.5rem;
   }
   .logo_group {
-    text-align: center;
-    width: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 62%;
+    /* border: 1px solid black; */
+    margin: .3rem 0;
   }
   .logo_stack {
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
 
   .stack_name {
     font-size: 1rem;
+    margin-top: .25rem;
   }
   /* contact me styling */
   .contact-div {
