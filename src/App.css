@@ -304,15 +304,20 @@ font-family: 'Roboto', sans-serif;
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 4.5rem 5rem;
+  gap: 3.5rem;
   margin-top: 25px;
 }
 .logo_group {
+  display: flex;
   text-align: center;
-  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
 }
 .logo_stack {
   width: 100%;
+  height: 60%;
   border-radius: 5px;
 }
 .stack_name {
@@ -335,16 +340,20 @@ font-family: 'Roboto', sans-serif;
   display: grid;
   padding: 0.3rem 1.5rem;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 0rem;
+  gap: 1.5rem .6rem;
 }
 .social-grid div {
   border-radius: 10px;
   background-color: #f3f4f6;
   box-shadow: 2px 4px 2px 4px #d4d4d8;
-  width: 80%;
-  /* padding: 2rem; */
+  width: 90%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 135px;
+  /* height: 70%; */
 }
 .social-grid div a {
   text-decoration: none;
@@ -352,7 +361,8 @@ font-family: 'Roboto', sans-serif;
   color: black;
 }
 .social-grid img {
-  width: 65%;
+  width: 100%;
+  /* height: 60%; */
   margin-top: 0.5rem;
 }
 
@@ -642,18 +652,19 @@ font-family: 'Roboto', sans-serif;
     font-size: 2rem;
   }
 
+  /* .skills{
+    border: 1px solid black;
+  } */
   .skill-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    gap: 0.1rem 1rem;
+    /* border: 1px solid black; */
+    margin-left: 2rem;
   }
   .logo_group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 62%;
+    width: 50%;
     /* border: 1px solid black; */
-    margin: .3rem 0;
+    margin: 0.3rem 0;
   }
   .logo_stack {
     width: 100%;
@@ -662,7 +673,7 @@ font-family: 'Roboto', sans-serif;
 
   .stack_name {
     font-size: 1rem;
-    margin-top: .25rem;
+    margin-top: 0.25rem;
   }
   /* contact me styling */
   .contact-div {
