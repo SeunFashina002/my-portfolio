@@ -309,12 +309,10 @@ font-family: 'Roboto', sans-serif;
 }
 .logo_group {
   text-align: center;
-  /* border: 1px solid white; */
-  width: 72%;
+  width: 50%;
 }
 .logo_stack {
   width: 100%;
-  height: 100%;
   border-radius: 5px;
 }
 .stack_name {
@@ -451,7 +449,6 @@ font-family: 'Roboto', sans-serif;
 /* MOBILE STARTS HERE */
 
 @media screen and (max-width: 767px) {
-
   .container {
     padding: 1rem;
   }
@@ -649,10 +646,15 @@ font-family: 'Roboto', sans-serif;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
-  .logo_stack {
-    width: 68%;
-    height: 60%;
+  .logo_group {
+    text-align: center;
+    width: 72%;
   }
+  .logo_stack {
+    width: 100%;
+    height: 100%;
+  }
+
   .stack_name {
     font-size: 1rem;
   }
