@@ -44,12 +44,12 @@ export default function DetailsHero({ id }) {
 
           <div className="btns det-btn">
             {project.project_link && (
-              <a href={project.project_link}>
+              <a href={project.project_link} target="_blank">
                 <button>{project.status}</button>
               </a>
             )}
             {project.github_link && (
-              <a href={project.github_link}>
+              <a href={project.github_link} target="_blank">
                 <button>View Code</button>
               </a>
             )}
